@@ -22,5 +22,7 @@ source $ZSH/oh-my-zsh.sh
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 
+eval "$(docker-machine env default)"
+
 # Pour GVM
 [[ -s "/Users/albertlebatteux/.gvm/scripts/gvm" ]] && source "/Users/albertlebatteux/.gvm/scripts/gvm"
