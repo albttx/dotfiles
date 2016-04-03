@@ -1,0 +1,71 @@
+
+" -----------------START VUNDLE---------------------- "
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+" let Vundle manage Vundle, required
+" Plugin 'VundleVim/Vundle.vim'
+
+Bundle 'gmarik/vundle'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/nerdtree'
+Bundle 'bling/vim-airline'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'drillbits/nyan-modoki.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
+" -----------------END VUNDLE---------------------- "
+
+" ---> SOLARIZED THEME <---
+set background=dark
+let g:solarized_termcolors = 256
+let g:solarized_termtrans = 1
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+colorscheme solarized
+filetype off
+
+" ---> NERD TREE CONFIG
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd vimenter * NERDTree "lunch NERDTree on start
+
+" ---> Airline Config
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+" Move between buffer
+map <C-k> :bprev<CR>
+map <C-l> :bnext<CR>
+map <C-d> :bdelete<CR>
+" Move between split
+map <C-b> <C-w><C-w>
+map <C-<> <C-w><C-W>
+
+" ---> Rainbow CONGIG
+au VimEnter * RainbowParenthesesToggle
+
+" NYAN CAT MODE
+set laststatus=2
+set statusline=%{g:NyanModoki()}
+let g:nyan_modoki_select_cat_face_number = 2
+let g:nayn_modoki_animation_enabled= 1
+
+
+" --------- MY CONFIG --------- "
+
+set nu
+syntax on
+set mouse=a
+set ft=nasm
+
+" some mistakes i made a lot like :Wq :Q ...
+command W w
+command Q q
+command WQ wq
+command E e
