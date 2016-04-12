@@ -13,7 +13,7 @@ ZSH_THEME="agnoster"
 DEFAULT_USER="aera_style"
 
 plugins=(git)
-plugins=(git ruby sublime)
+plugins=(git ruby sublime zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 

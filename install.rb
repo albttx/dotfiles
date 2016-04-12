@@ -16,5 +16,7 @@ puts "OK - Symlink Created !"
 system "cp school42/agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme"
 puts "OK - Agnoster theme for 42"
 
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 system "rm -rf ~/.atom"
 system "git clone http://github.com/ale-batt/dotatom ~/.atom"
