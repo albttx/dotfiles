@@ -8,6 +8,7 @@ alias upalias="source ~/.zshrc;source ~/.myzshrc;source ~/.vimrc; source ~/.vimr
 alias myalias="cat ~/.alias"
 alias py="/usr/local/bin/python3.4"
 alias rb="ruby"
+alias whiletrain="while true; do sl; done"
 
 eval "$(thefuck --alias fuck)"
 

@@ -26,3 +26,4 @@ eval "$(docker-machine env default)"
 
 # Pour GVM
 [[ -s "/Users/albertlebatteux/.gvm/scripts/gvm" ]] && source "/Users/albertlebatteux/.gvm/scripts/gvm"
+eval $(thefuck --alias)

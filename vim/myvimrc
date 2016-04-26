@@ -1,20 +1,19 @@
 
 " -----------------START VUNDLE---------------------- "
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 " let Vundle manage Vundle, required
-" Plugin 'VundleVim/Vundle.vim'
 
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdtree'
-Bundle 'bling/vim-airline'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'drillbits/nyan-modoki.vim'
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -49,13 +48,6 @@ map <C-<> <C-w><C-W>
 
 " ---> Rainbow CONGIG
 au VimEnter * RainbowParenthesesToggle
-
-" NYAN CAT MODE
-set laststatus=2
-set statusline=%{g:NyanModoki()}
-let g:nyan_modoki_select_cat_face_number = 2
-let g:nayn_modoki_animation_enabled= 1
-
 
 " --------- MY CONFIG --------- "
 
