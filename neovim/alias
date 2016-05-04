@@ -1,0 +1,24 @@
+# Add in .zshrc :   source .alias
+
+alias glib="gcc ~/project/libft/libft.a -I~/project/libft/includes"
+alias makelib="make -C ~/project/libft re"
+alias gwww="gcc -Wall -Wextra -Werror"
+alias gsdl="gcc -I/Library/Frameworks/SDL2.framework/Headers/ -framework SDL2"
+alias upalias="source ~/.zshrc;source ~/.myzshrc;source ~/.vimrc; source ~/.vimrc"
+alias myalias="cat ~/.alias"
+alias py="/usr/local/bin/python3.4"
+alias rb="ruby"
+alias whiletrain="while true; do sl; done"
+
+eval "$(thefuck --alias fuck)"
+
+function gitall() {
+	git add .
+	if [ -n "$1" ]
+	then
+		git commit -m "$1"
+	else
+		git commit -m update
+	fi
+	git push
+}
