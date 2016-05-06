@@ -1,0 +1,22 @@
+
+call plug#begin('~/.vim/plugged')
+
+" ~~~~~ Colorsheme ~~~~~~ "
+Plug 'altercation/vim-colors-solarized'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'mhartington/oceanic-next'
+
+
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'fatih/vim-go'
+Plug 'hsitz/vimorganizer'
+
+Plug 'Valloric/YouCompleteMe'
+
+call plug#end()
+filetype plugin indent on

@@ -1,0 +1,25 @@
+
+" colorscheme solarized
+" colorscheme OceanicNext
+colorscheme hybrid_material
+
+set number
+syntax enable
+set mouse=a
+set ft=nasm
+set nowrap
+
+" Move between buffer
+map <C-k> :bprev<CR>
+map <C-l> :bnext<CR>
+map <C-d> :bdelete<CR>
+" Move between split
+map <C-b> <C-w><C-w>
+map <C-<> <C-w><C-W>
+
+" some mistakes i made a lot like :Wq :Q ...
+command W w
+command Q q
+command WQ wq
+command Wq wq
+command E e

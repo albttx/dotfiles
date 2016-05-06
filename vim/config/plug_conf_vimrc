@@ -1,0 +1,30 @@
+
+" ---> SOLARIZED THEME <---
+" set background=dark
+let g:solarized_termcolors = 256
+" let g:solarized_termtrans = 1
+" let g:solarized_visibility = "high"
+" let g:solarized_contrast = "high"
+filetype off
+
+" OCEANIC NEXT "
+syntax enable
+set t_Co=256
+set background=dark
+let g:airline_theme = "hybrid"
+
+" ---> NERD TREE CONFIG
+map <C-n> :NERDTreeToggle<CR>
+
+" ---> Airline Config
+" let g:airline_theme='solarized'
+" let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#enabled = 1
+" set laststatus=2
+
+" Vim Organizer
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+au BufEnter *.org            call org#SetOrgFileType()
+
+" ---> Rainbow CONGIG
+" au VimEnter * RainbowParenthesesToggle

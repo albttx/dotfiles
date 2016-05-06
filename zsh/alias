@@ -1,5 +1,6 @@
 # Add in .zshrc :   source .alias
 
+alias vi="vim"
 alias glib="gcc ~/project/libft/libft.a -I~/project/libft/includes"
 alias makelib="make -C ~/project/libft re"
 alias gwww="gcc -Wall -Wextra -Werror"

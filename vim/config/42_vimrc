@@ -54,8 +54,3 @@ set hlsearch
 "Prevent backups when editing system files
 au BufWrite /private/tmp/crontab.* set nowritebackup
 au BufWrite /private/etc/pw.* set nowritebackup
-
-"Source user configuration
-if filereadable(expand("~/.myvimrc"))
-	source ~/.myvimrc
-endif
