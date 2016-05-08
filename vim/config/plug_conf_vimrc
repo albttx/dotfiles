@@ -13,6 +13,10 @@ set t_Co=256
 set background=dark
 let g:airline_theme = "hybrid"
 
+" -----------------------------------------------------------
+"  		Config Plugins
+" - ---------------------------------------------------------
+
 " ---> NERD TREE CONFIG
 map <C-n> :NERDTreeToggle<CR>
 
@@ -27,4 +31,10 @@ au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org            call org#SetOrgFileType()
 
 " ---> Rainbow CONGIG
-" au VimEnter * RainbowParenthesesToggle
+au VimEnter * RainbowParenthesesToggle
+
+" ---> Vim Indent guide
+let g:indent_guides_auto_colors = 1
+let g:indent_guides_color_change_percent = 5
+let g:indent_guides_start_level = 2
+set ts=2 sw=2 et
