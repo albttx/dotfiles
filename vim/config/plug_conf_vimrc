@@ -20,6 +20,11 @@ let g:airline_theme = "hybrid"
 " ---> NERD TREE CONFIG
 map <C-n> :NERDTreeToggle<CR>
 
+" ---> NERD Commenter
+nmap <C-/> <plug>NERDComToggleComment
+nnoremap <D-/> :NERDComToggleComment<CR>
+"nmap <C-/> <plug>NERDCommenterToggle   
+
 " ---> Airline Config
 " let g:airline_theme='solarized'
 " let g:airline_powerline_fonts = 1
