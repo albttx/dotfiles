@@ -1,7 +1,7 @@
 
 " ---> SOLARIZED THEME <---
 " set background=dark
-let g:solarized_termcolors = 256
+" let g:solarized_termcolors = 256
 " let g:solarized_termtrans = 1
 " let g:solarized_visibility = "high"
 " let g:solarized_contrast = "high"
@@ -27,11 +27,11 @@ nnoremap <D-/> :NERDComToggleComment<CR>
 
 " ---> Airline Config
 " let g:airline_theme='solarized'
-" let g:airline_powerline_fonts = 1
-" let g:airline#extensions#tabline#enabled = 1
-" set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
 
-" Vim Organizer
+" ----> Vim Organizer
 au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org            call org#SetOrgFileType()
 
