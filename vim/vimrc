@@ -1,7 +1,7 @@
 
-let $VIM_CONFIG = "~/.vim/config"
+let $VIM_CONFIG = "~/.vim/vim_conf"
 
-source $VIM_CONFIG/42_vimrc
 source $VIM_CONFIG/plugin_vimrc
 source $VIM_CONFIG/plug_conf_vimrc
 source $VIM_CONFIG/my_vimrc
+source $VIM_CONFIG/42_vimrc

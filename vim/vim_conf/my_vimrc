@@ -9,6 +9,12 @@ set mouse=a
 set ft=nasm
 set nowrap
 
+" -> Save file with CMD - s
+"Works in insert mode, saves and puts back in insert mode
+"Works in normal mode, must press Esc first
+:map <C-s> :w<kEnter>
+:imap <C-s> <Esc>:w<kEnter> 
+
 " Move between buffer
 map <C-k> :bprev<CR>
 map <C-l> :bnext<CR>
