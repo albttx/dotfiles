@@ -9,6 +9,8 @@ set mouse=a
 set ft=nasm
 set nowrap
 
+set directory=/tmp/vimswpfile//
+
 " -> Save file with CMD - s
 "Works in insert mode, saves and puts back in insert mode
 "Works in normal mode, must press Esc first
