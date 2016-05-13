@@ -10,6 +10,10 @@ alias myalias="cat ~/.alias"
 alias py="/usr/local/bin/python3.4"
 alias rb="ruby"
 
+gclone() {
+	git clone "http://github.com/$@"
+}
+
 function gitall() {
 	git add .
 	if [ -n "$1" ]
