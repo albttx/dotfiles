@@ -17,6 +17,9 @@ let g:airline_theme = "hybrid"
 "  		Config Plugins
 " - ---------------------------------------------------------
 
+" ---> Vim - go
+" let g:go_fmt_command = "goimports"
+
 " ---> NERD TREE CONFIG
 map <C-n> :NERDTreeToggle<CR>
 
