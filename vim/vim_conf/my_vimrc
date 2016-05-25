@@ -9,7 +9,7 @@ set mouse=a
 set ft=nasm
 set nowrap
 
-set directory=~/.vim/swp//
+set directory=~/.vim/.swp//
 
 " -> Save file with CMD - s
 "Works in insert mode, saves and puts back in insert mode
