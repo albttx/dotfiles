@@ -1,17 +1,9 @@
 
-" ---> SOLARIZED THEME <---
-" set background=dark
-" let g:solarized_termcolors = 256
-let g:solarized_termtrans = 1
-" let g:solarized_visibility = "high"
-" let g:solarized_contrast = "high"
 filetype off
 
-" OCEANIC NEXT "
 syntax enable
 set t_Co=256
 set background=dark
-let g:airline_theme = "hybrid"
 
 " -----------------------------------------------------------
 "  		Config Plugins
@@ -27,7 +19,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " ---> Vim - go
-" let g:go_fmt_command = "goimports"
+let g:go_fmt_command = "goimports"
 
 " ---> NERD TREE CONFIG
 map <C-n> :NERDTreeToggle<CR>
@@ -39,6 +31,8 @@ nnoremap <D-/> :NERDComToggleComment<CR>
 "nmap <C-/> <plug>NERDCommenterToggle   
 
 " ---> Airline Config
+let g:airline_theme = "luna"
+" let g:airline_theme = "hybrid"
 " let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1

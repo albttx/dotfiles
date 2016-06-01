@@ -1,7 +1,7 @@
 
 " colorscheme solarized
 " colorscheme OceanicNext
-colorscheme hybrid_material
+" colorscheme hybrid_material
 
 set number
 syntax enable
