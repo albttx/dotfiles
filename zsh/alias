@@ -10,6 +10,11 @@ alias myalias="cat ~/.alias"
 alias py="/usr/local/bin/python3.4"
 alias rb="ruby"
 
+alias dck="docker"
+alias dckc="docker-compose"
+alias dckm="docker-machine"
+alias dckdel="docker rm -f $(docker ps -aq)"
+
 gclone() {
 	git clone "http://github.com/$@"
 }

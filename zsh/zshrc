@@ -27,5 +27,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Pour GVM
 export GOPATH="$HOME/golang"
 
-eval $(docker-machine env)
+eval $(docker-machine env default)
 

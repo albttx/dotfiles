@@ -45,6 +45,11 @@ au BufEnter *.org            call org#SetOrgFileType()
 " ---> Rainbow CONGIG
 au VimEnter * RainbowParenthesesToggle
 
+" ---> Vim Markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+
+
 " ---> Vim Indent guide
 let g:indent_guides_auto_colors = 1
 let g:indent_guides_color_change_percent = 5

@@ -19,6 +19,10 @@ Plug 'majutsushi/tagbar'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'tpope/vim-markdown'
+
+Plug 'a.vim' " quickly switch between file.c to header.h 
+
 Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
