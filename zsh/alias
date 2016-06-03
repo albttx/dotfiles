@@ -13,7 +13,7 @@ alias rb="ruby"
 alias dck="docker"
 alias dckc="docker-compose"
 alias dckm="docker-machine"
-alias dckdel="docker rm -f $(docker ps -aq)"
+alias dckdel="docker rm -f \$(docker ps -aq)"
 
 gclone() {
 	git clone "http://github.com/$@"
