@@ -6,6 +6,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'mhartington/oceanic-next'
 
+"Plug 'ryanoasis/vim-devicons'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 

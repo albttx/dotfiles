@@ -6,32 +6,37 @@ set t_Co=256
 set background=dark
 
 " -----------------------------------------------------------
-"  		Config Plugins
+"  		CTRL P
 " - ---------------------------------------------------------
-
-" ---> CTRL P
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o
 
-"\ 'dir':  '\v[\/]\.(git|hg|svn)$',
 let g:ctrlp_custom_ignore = {
   \ 'dir':  'node_modules\|git',
   \ 'file': '\v\.(exe|so|dll|o)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
-" ---> Vim - go
+" -----------------------------------------------------------
+"  		GOLANG
+" - ---------------------------------------------------------
 let g:go_fmt_command = "goimports"
 
-" ---> NERD TREE CONFIG
+" -----------------------------------------------------------
+"  		NERD TREE
+" - ---------------------------------------------------------
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" ---> NERD Commenter
+" -----------------------------------------------------------
+"  		NERD COMMENTER
+" - ---------------------------------------------------------
 nmap <C-/> <plug>NERDComToggleComment
 nnoremap <D-/> :NERDComToggleComment<CR>
 "nmap <C-/> <plug>NERDCommenterToggle   
 
-" ---> Airline Config
+" -----------------------------------------------------------
+"  		AIRLINE
+" - ---------------------------------------------------------
 let g:airline_theme = "luna"
 " let g:airline_theme = "hybrid"
 " let g:airline_theme='solarized'

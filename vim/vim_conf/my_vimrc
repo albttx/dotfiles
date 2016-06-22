@@ -1,12 +1,17 @@
 
-colorscheme OceanicNext
-" colorscheme solarized
-" colorscheme hybrid_material
+syntax enable
+
+"colorscheme OceanicNext
+"colorscheme solarized
+colorscheme hybrid_material
+
+" set the background color as iterm background
+highlight Normal ctermbg=none
+highlight nonText ctermbg=none
 
 set number
-syntax enable
 set mouse=a
-set ft=nasm
+set ft=nasm " syntax coloring for assembly
 set nowrap
 
 set directory=~/.vim/.swp//
@@ -25,7 +30,7 @@ map <C-d> :bdelete<CR>
 map <C-b> <C-w><C-w>
 map <C-<> <C-w><C-W>
 
-" some mistakes i made a lot like :Wq :Q ...
+" Force some mistakes i always do :Wq :Q ...
 command W w
 command Q q
 command WQ wq
