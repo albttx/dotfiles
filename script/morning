@@ -1,0 +1,9 @@
+#!/bin/bash
+
+brew update && brew upgrade
+
+docker-machine start default
+
+eval $(docker-machine env default)
+
+echo "Good Morning Albert !"

@@ -1,14 +1,15 @@
 
-.PHONY ohmyzsh brew
-
 CONFIGDIR=~/config
 
+.PHONY:	ohmyzsh brew link source
 # install oh-my-zsh && syntax highlighting plugin
+source:
+	env
+	source ~/.zshrc
+
 ohmyzsh:
-	if ! [ -d ~/.oh-my-zsh ]; then
-		sh -c \"$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)\"
-		git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-	fi
+	sh -c `curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh`
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # If OSX install brew and some nice soft
 brew:
