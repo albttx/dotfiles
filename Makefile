@@ -4,7 +4,6 @@ CONFIGDIR=~/config
 .PHONY:	ohmyzsh brew link source
 # install oh-my-zsh && syntax highlighting plugin
 source:
-	env
 	source ~/.zshrc
 
 ohmyzsh:
