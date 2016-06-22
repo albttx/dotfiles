@@ -17,6 +17,9 @@ alias dckdel="docker rm -f \$(docker ps -aq)"
 
 alias check="grep -rnw --exclude-dir='node_modules' . -e "
 
+alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="sudo ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+
 gclone() {
 	git clone "http://github.com/$@"
 }
