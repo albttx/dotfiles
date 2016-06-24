@@ -1,15 +1,10 @@
 
+
 filetype off
-
-syntax enable
-set t_Co=256
-set background=dark
-
 " -----------------------------------------------------------
 "  		CTRL P
 " - ---------------------------------------------------------
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o
-
 let g:ctrlp_custom_ignore = {
   \ 'dir':  'node_modules\|git',
   \ 'file': '\v\.(exe|so|dll|o)$',
@@ -44,19 +39,33 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 
-" ----> Vim Organizer
+
+" -----------------------------------------------------------
+"  		EMMET
+" - ---------------------------------------------------------
+let g:user_emmet_leader_key=','
+
+" -----------------------------------------------------------
+"		Vim Organizer
+" - ---------------------------------------------------------
 au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org            call org#SetOrgFileType()
 
-" ---> Rainbow CONGIG
+" -----------------------------------------------------------
+"		Rainbow CONGIG
+" - ---------------------------------------------------------
 au VimEnter * RainbowParenthesesToggle
 
-" ---> Vim Markdown
+" -----------------------------------------------------------
+"		Vim Markdown
+" - ---------------------------------------------------------
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 
 
-" ---> Vim Indent guide
+" -----------------------------------------------------------
+"		Vim Indent Guide
+" - ---------------------------------------------------------
 let g:indent_guides_auto_colors = 1
 let g:indent_guides_color_change_percent = 5
 let g:indent_guides_start_level = 2

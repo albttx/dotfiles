@@ -29,4 +29,5 @@ link:
 	ln -s $(CONFIGDIR)/vim/vimrc ~/.vimrc
 	rm -rf ~/.zshrc
 	ln -s $(CONFIGDIR)/zsh/zshrc ~/.zshrc
+	ln -s $(CONFIGDIR)/irssi ~/.irssi
 
