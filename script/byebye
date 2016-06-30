@@ -1,0 +1,6 @@
+
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+sudo shutdown now
+
+
