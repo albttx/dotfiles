@@ -2,19 +2,19 @@ servers = (
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
   { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
   { address = "irc.esper.net"; chatnet = "EsperNet"; port = "6667"; },
-  { 
+  {
     address = "chat.freenode.net";
     chatnet = "Freenode";
     port = "6667";
-	autoconnect = "yes";
-	term_type = "utf-8";
+    autoconnect = "yes";
+    term_type = "utf-8";
   },
   {
-	  address = "irc.root-me.org";
-	  chatnet = "root-me",
-	  port    = "6667";
-	  autoconnect = "yes";
-  }
+    address = "irc.root-me.org";
+    chatnet = "root-me";
+    port = "6667";
+    autoconnect = "yes";
+  },
   {
     address = "irc.gamesurge.net";
     chatnet = "GameSurge";
@@ -112,6 +112,7 @@ chatnets = {
     max_msgs = "1";
     max_whois = "1";
   };
+  "root-me" = { type = "IRC"; };
 };
 
 channels = (
