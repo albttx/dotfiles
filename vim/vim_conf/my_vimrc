@@ -13,9 +13,12 @@ highlight nonText ctermbg=none
 
 set number
 set mouse=a
-set ft=nasm " syntax coloring for assembly
 set nowrap
 
+" syntax coloring for assembly
+set ft=nasm
+
+" vim .swp file are save in another directory
 set directory=~/.vim/.swp//
 
 " -> Save file with CMD - s
@@ -27,7 +30,7 @@ set directory=~/.vim/.swp//
 " Move between buffer
 map <C-k> :bprev<CR>
 map <C-l> :bnext<CR>
-map <C-d> :bdelete<CR>
+map <C-d> :Bclose<CR>
 " Move between split
 map <C-b> <C-w><C-w>
 map <C-<> <C-w><C-W>
