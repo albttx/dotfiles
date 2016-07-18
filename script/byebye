@@ -1,6 +1,9 @@
 
 docker stop $(docker ps -aq)
-docker rm $(docker ps -aq)
-sudo shutdown now
 
+docker rm $(docker ps -aq)
+
+tmux kill-session
+
+;sudo shutdown now
 

@@ -1,0 +1,34 @@
+# Add in .zshrc :   source .alias
+
+alias vi="vim"
+alias gwww="gcc -Wall -Wextra -Werror"
+alias myalias="cat ~/.alias"
+alias py="python"
+alias rb="ruby"
+
+alias dck="docker"
+alias dckc="docker-compose"
+alias dckm="docker-machine"
+alias dckdel="docker rm -f \$(docker ps -aq)"
+
+alias check="grep -rnw --exclude-dir='node_modules' . -e "
+
+alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="sudo ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+
+alias untar="tar -xvf"
+
+gclone() {
+	git clone "http://github.com/$@"
+}
+
+function gitall() {
+	git add .
+	if [ -n "$1" ]
+	then
+		git commit -m "$1"
+	else
+		git commit -m update
+	fi
+	git push
+}

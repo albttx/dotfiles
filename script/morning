@@ -6,6 +6,6 @@ brew update && brew upgrade
 echo 'Starting docker machine'
 docker-machine start default
 
-eval $(docker-machine env default)
+source ~/.zshrc
 
 echo -e "\033[32mGood Morning Albert !\033[0m"
