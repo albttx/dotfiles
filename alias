@@ -11,6 +11,8 @@ alias dckc="docker-compose"
 alias dckm="docker-machine"
 alias dckdel="docker rm -f \$(docker ps -aq)"
 
+alias zen="curl https://api.github.com/zen"
+
 alias check="grep -rnw --exclude-dir='node_modules' . -e "
 
 alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
