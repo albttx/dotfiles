@@ -6,6 +6,8 @@ brew update && brew upgrade
 echo 'Starting docker machine'
 docker-machine start default
 
-source ~/.zshrc
+reset
+
+tmux
 
 echo -e "\033[32mGood Morning Albert !\033[0m"
