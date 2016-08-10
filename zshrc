@@ -28,6 +28,7 @@ export PATH="$PATH:$DOTFILES/script"
 
 # Pour GVM
 export GOPATH="$HOME/golang"
+export PATH="$PATH:$GOPATH/bin"
 
 eval $(docker-machine env default)
 
