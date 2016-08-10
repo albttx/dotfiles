@@ -1,13 +1,18 @@
 #!/bin/bash
 
-echo 'Brew update && upgrade'
+echo "Brew update && upgrade"
 brew update && brew upgrade
 
-echo 'Starting docker machine'
+echo "Starting docker machine"
 docker-machine start default
 
+echo "Let's reset !"
 reset
 
-tmux
-
 echo -e "\033[32mGood Morning Albert !\033[0m"
+
+echo 'Get some zen inspiration'
+curl https://api.github.com/zen
+
+echo -e '\nThen a joke'
+joke

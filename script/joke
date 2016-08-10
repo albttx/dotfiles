@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl -s http://www.ajokeaday.com | nokogiri -e "puts \$_.css('p.jubilat').last.text.tr('\n', '').squeeze(' ')"
