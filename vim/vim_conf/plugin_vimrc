@@ -28,7 +28,8 @@ Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 
 Plug 'ervandew/supertab'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
+Plug 'Shougo/neocomplete.vim'
 Plug 'SirVer/ultisnips'
 
 call plug#end()
