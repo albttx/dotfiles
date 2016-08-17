@@ -33,6 +33,8 @@ Plug 'ervandew/supertab'
 Plug 'Shougo/neocomplete.vim'
 Plug 'SirVer/ultisnips'
 
+Plug 'mhinz/vim-startify'
+
 Plug 'irrationalistic/vim-tasks'
 
 call plug#end()
