@@ -27,10 +27,13 @@ Plug 'a.vim' " quickly switch between file.c to header.h
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 
+Plug 'airblade/vim-gitgutter'
 Plug 'ervandew/supertab'
 "Plug 'Valloric/YouCompleteMe'
 Plug 'Shougo/neocomplete.vim'
 Plug 'SirVer/ultisnips'
+
+Plug 'irrationalistic/vim-tasks'
 
 call plug#end()
 filetype plugin indent on
