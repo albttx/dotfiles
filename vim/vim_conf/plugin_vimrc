@@ -33,6 +33,7 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'mhinz/vim-startify'
 Plug 'irrationalistic/vim-tasks'
 
+Plug 'dkprice/vim-easygrep'
 " source %
 " PlugInstall
 call plug#end()
