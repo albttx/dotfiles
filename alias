@@ -24,6 +24,11 @@ gclone() {
 	git clone "http://github.com/$@"
 }
 
+function cdl() {
+	cd $1
+	ls $2
+}
+
 function gitall() {
 	git add .
 	if [ -n "$1" ]
