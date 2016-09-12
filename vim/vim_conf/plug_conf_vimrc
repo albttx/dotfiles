@@ -9,8 +9,9 @@ let g:neocomplete#enable_at_startup = 1
 "  		CTRL P
 " - ---------------------------------------------------------
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o
+
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  'node_modules\|git',
+  \ 'dir':  'node_modules',
   \ 'file': '\v\.(exe|so|dll|o)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
