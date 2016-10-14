@@ -35,6 +35,16 @@ map <C-d> :Bclose<CR>
 map <C-b> <C-w><C-w>
 map <C-<> <C-w><C-W>
 
+nnoremap <silent> <ESC>^[A <Nop>
+nnoremap <silent> <ESC>^[B <Nop>
+nnoremap <silent> <ESC>^[D <Nop>
+nnoremap <silent> <ESC>^[C <Nop>
+
+nnoremap <silent> <C-Right> <c-w>l
+nnoremap <silent> <C-Left> <c-w>h
+nnoremap <silent> <C-Up> <c-w>k
+nnoremap <silent> <C-Down> <c-w>j
+
 " Force some mistakes i always do :Wq :Q ...
 command W w
 command Q q
