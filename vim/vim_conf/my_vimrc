@@ -31,14 +31,13 @@ set directory=~/.vim/.swp//
 map <C-k> :bprev<CR>
 map <C-l> :bnext<CR>
 map <C-d> :Bclose<CR>
-" Move between split
-map <C-b> <C-w><C-w>
-map <C-<> <C-w><C-W>
 
-nnoremap <silent> <ESC>^[A <Nop>
-nnoremap <silent> <ESC>^[B <Nop>
-nnoremap <silent> <ESC>^[D <Nop>
-nnoremap <silent> <ESC>^[C <Nop>
+" Move between split
+
+nnoremap <silent> <ESC>^[OA <Nop>
+nnoremap <silent> <ESC>^[OB <Nop>
+nnoremap <silent> <ESC>^[OD <Nop>
+nnoremap <silent> <ESC>^[OC <Nop>
 
 nnoremap <silent> <C-Right> <c-w>l
 nnoremap <silent> <C-Left> <c-w>h
