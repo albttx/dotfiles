@@ -13,7 +13,7 @@ alias dckdel="docker rm -f \$(docker ps -aq)"
 
 alias zen="curl https://api.github.com/zen"
 
-alias check="grep -rnw --exclude-dir='node_modules' . -e "
+alias check="grep -rni --exclude-dir='node_modules' . -e "
 
 alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="sudo ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
@@ -26,7 +26,23 @@ gclone() {
 
 function cdl() {
 	cd $1
-	ls $2
+		ls $2
+}
+
+h2d(){
+	echo "ibase=16; $@" | bc
+}
+
+d2h(){
+	echo "obase=16; $@" | bc
+}
+
+vman() {
+	vim -c "SuperMan $*"
+
+	if [ "$?" != "0"  ]; then
+		echo "No manual entry for $*"
+	fi
 }
 
 function gitall() {
