@@ -17,9 +17,19 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " -----------------------------------------------------------
-"  		GOLANG
+"  		VIM GREP
+" - ---------------------------------------------------------
+let g:EasyGrepCommand=1
+"let g:EasyGrepFilesToExclude=".svn,.git"
+let g:EasyGrepRecursive=1
+let g:EasyGrepBinary=1
+
+" -----------------------------------------------------------
+"  		VIM-GO
 " - ---------------------------------------------------------
 let g:go_fmt_command = "goimports"
+let g:go_def_mapping_enabled = 0
+let g:go_def_reuse_buffer = 1
 
 " -----------------------------------------------------------
 "  		NERD TREE
@@ -43,7 +53,6 @@ let g:airline_theme = "luna"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
-
 
 " -----------------------------------------------------------
 "  		EMMET
