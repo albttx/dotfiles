@@ -27,7 +27,7 @@ map <C-t> :CtrlPTag<CR>
 " Move between buffer
 map <C-k> :bprev<CR>
 map <C-l> :bnext<CR>
-map <C-d> :Bclose<CR>
+map <C-d> :Bclose!<CR>
 
 " Move between split
 

@@ -34,6 +34,10 @@ Plug 'mhinz/vim-startify'
 Plug 'irrationalistic/vim-tasks'
 
 Plug 'dkprice/vim-easygrep'
+
+Plug 'jez/vim-superman'
+
+Plug 'tpope/vim-surround'
 " source %
 " PlugInstall
 call plug#end()
