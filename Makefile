@@ -25,11 +25,13 @@ brew:
 	brew tap homebrew/services
 
 link:
-	ln -Fs $(CONFIGDIR)/vim			$(HOME)/.vim
+	ln -Fs $(CONFIGDIR)/vim				$(HOME)/.vim
 	ln -fs $(CONFIGDIR)/vim/vimrc		$(HOME)/.vimrc
-	ln -fs $(CONFIGDIR)/zshrc		$(HOME)/.zshrc
-	ln -fs $(CONFIGDIR)/alias		$(HOME)/.alias
+	ln -fs $(CONFIGDIR)/zshrc			$(HOME)/.zshrc
+	ln -fs $(CONFIGDIR)/bashrc			$(HOME)/.bashrc
+	ln -fs $(CONFIGDIR)/alias			$(HOME)/.alias
+	ln -fs $(CONFIGDIR)/gitconfig		$(HOME)/.gitconfig
 	ln -fs $(CONFIGDIR)/tmux/tmux.conf	$(HOME)/.tmux.conf
-	ln -Fs $(CONFIGDIR)/irssi		$(HOME)/.irssi
-	ln -Fs $(CONFIGDIR)/weechat		$(HOME)/.weechat
+	ln -Fs $(CONFIGDIR)/irssi			$(HOME)/.irssi
+	ln -Fs $(CONFIGDIR)/weechat			$(HOME)/.weechat
 
