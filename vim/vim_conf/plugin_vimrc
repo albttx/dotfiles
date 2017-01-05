@@ -1,43 +1,61 @@
 
 call plug#begin('~/.vim/plugged')
 
-" ~~~~~ Colorsheme ~~~~~~ "
+" Autocompletion
+if has('nvim')
+	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
+else
+	Plug 'Shougo/neocomplete.vim'
+endif
+
+" Colorsheme
 Plug 'altercation/vim-colors-solarized'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'mhartington/oceanic-next'
 
+" Fancy vim
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'mhinz/vim-startify'
 
+" file Navigation
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'kien/rainbow_parentheses.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'fatih/vim-go'
-Plug 'hsitz/vimorganizer'
+
+" Search words
+Plug 'dkprice/vim-easygrep'
 Plug 'majutsushi/tagbar'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'jiangmiao/auto-pairs'
 
-Plug 'tpope/vim-markdown'
-
-Plug 'a.vim' " quickly switch between file.c to header.h 
+" Languages
+Plug 'fatih/vim-go'
 "Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-fugitive'
 
+" Git
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'ervandew/supertab'
-Plug 'Shougo/neocomplete.vim'
+" Automaticly close braquets
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 
-Plug 'mhinz/vim-startify'
+" Vim as notebook
+Plug 'tpope/vim-markdown'
+Plug 'hsitz/vimorganizer'
 Plug 'irrationalistic/vim-tasks'
 
-Plug 'dkprice/vim-easygrep'
+" Quickly switch between file.c to header.h 
+Plug 'a.vim'
 
+" Make <tab> work better
+Plug 'ervandew/supertab'
+
+" Manfile with vim
 Plug 'jez/vim-superman'
 
-Plug 'tpope/vim-surround'
+"Plug 'nathanaelkane/vim-indent-guides'
+
 " source %
 " PlugInstall
 call plug#end()

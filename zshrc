@@ -33,3 +33,5 @@ export PATH="$PATH:$GOPATH/bin"
 eval $(docker-machine env default)
 
 eval $(thefuck --alias)
+
+export PATH="$HOME/.brew/bin:$PATH"

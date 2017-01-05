@@ -1,9 +1,12 @@
 
 filetype off
 " -----------------------------------------------------------
-"  		NeoComplete
+"  		NeoComplete && DeoComplete
 " - ---------------------------------------------------------
+"   For Vim
 let g:neocomplete#enable_at_startup = 1
+"   For NeoVim
+let g:deoplete#enable_at_startup = 1
 
 " -----------------------------------------------------------
 "  		CTRL P

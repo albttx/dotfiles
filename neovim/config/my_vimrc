@@ -27,7 +27,7 @@ set directory=~/.vim/.swp//
 " Move between buffer
 map <C-k> :bprev<CR>
 map <C-l> :bnext<CR>
-map <C-d> :Bclose<CR>
+map <C-d> :Bclose!<CR>
 " Move between split
 map <C-b> <C-w><C-w>
 map <C-<> <C-w><C-W>
