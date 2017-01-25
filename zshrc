@@ -17,21 +17,18 @@ source $ZSH/oh-my-zsh.sh
 # My aliases
 source $DOTFILES/alias
 
-# Path for brew 
-export PATH="/usr/local/sbin:$PATH"
+homeOnly export PATH="$HOME/.brew/bin:$PATH"
+42Only   export PATH="/usr/local/sbin:$PATH"
 
-# Add RVM to PATH for scripting
+# PATH for RVM 
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# Add my script to the PATH
+# PATH for Personal script
 export PATH="$PATH:$DOTFILES/script"
 
-# Pour GVM
+# PATH for GO 
 export GOPATH="$HOME/golang"
 export PATH="$PATH:$GOPATH/bin"
 
+42Only export MACHINE_STORAGE_PATH="/goinfre/machine"
 eval $(docker-machine env default)
-
-eval $(thefuck --alias)
-
-export PATH="$HOME/.brew/bin:$PATH"

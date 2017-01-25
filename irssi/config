@@ -10,7 +10,7 @@ servers = (
     address = "irc.root-me.org";
     chatnet = "RootMe";
     port = "6667";
-    autoconnect = "yes";
+    autoconnect = "no";
   }
 );
 
@@ -186,7 +186,7 @@ statusbar = {
 
 settings = {
   core = {
-    real_name = "ale-batt";
+    real_name = "Albert Le Batteux";
     user_name = "ale-batt";
     nick = "ale-batt42";
   };

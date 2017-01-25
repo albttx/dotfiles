@@ -91,3 +91,11 @@ let g:indent_guides_auto_colors = 1
 let g:indent_guides_color_change_percent = 5
 let g:indent_guides_start_level = 2
 set ts=2 sw=2 et
+
+" -----------------------------------------------------------
+"		vim-cpp-enhanced-highlight
+" - ---------------------------------------------------------
+" Plug 'octol/vim-cpp-enhanced-highlight'
+" let g:cpp_class_scope_highlight = 1
+" let g:cpp_experimental_template_highlight = 1
+"let g:cpp_concepts_highlight = 1

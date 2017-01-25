@@ -27,6 +27,7 @@ Plug 'scrooloose/nerdcommenter'
 " Search words
 Plug 'dkprice/vim-easygrep'
 Plug 'majutsushi/tagbar'
+Plug 'tpope/vim-abolish'
 
 " Languages
 Plug 'fatih/vim-go'

@@ -2,9 +2,20 @@
 
 alias vi="vim"
 alias gwww="gcc -Wall -Wextra -Werror"
+alias g+="g++ -Wall -Wextra -Werror"
 alias myalias="cat ~/.alias"
 alias py="python"
 alias rb="ruby"
+alias lls="ls"
+alias check="grep -rni --exclude-dir='node_modules' . -e "
+
+alias zen="curl https://api.github.com/zen"
+alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="sudo ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+
+##################################
+#         Docker Aliases         #
+##################################
 
 alias dck="docker"
 alias dckc="docker-compose"
@@ -12,37 +23,39 @@ alias dckm="docker-machine"
 alias dckdel="docker rm -f \$(docker ps -aq)"
 alias dckclr="docker rmi $(docker images -q --filter 'dangling=true')"
 
-alias zen="curl https://api.github.com/zen"
-
-alias check="grep -rni --exclude-dir='node_modules' . -e "
-
-alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="sudo ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
-
-alias untar="tar -xvf"
-
-gclone() {
-	git clone "http://github.com/$@"
+dckirssi() {
+	docker run --rm -it --name irssi \
+		-e TERM \
+		-u $(id -u):$(id -g) \
+		--log-driver=none \
+		-v $HOME/.irssi:/home/user/.irssi:ro \
+		irssi
 }
 
 function cdl() {
 	cd $1
-		ls $2
+	ls $2
 }
 
-h2d(){
+# Hexadecimal to decimal
+h2d() {
 	echo "ibase=16; $@" | bc
 }
 
-d2h(){
+# Decimal to Hex
+d2h() {
 	echo "obase=16; $@" | bc
 }
 
-vman() {
-	vim -c "SuperMan $*"
+42Only () {
+	if [ -d /goinfre ]; then
+		$@
+	fi
+}
 
-	if [ "$?" != "0"  ]; then
-		echo "No manual entry for $*"
+homeOnly () {
+	if [ ! -d /goinfre ]; then
+		$@
 	fi
 }
 
