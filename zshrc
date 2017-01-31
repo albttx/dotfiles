@@ -17,8 +17,8 @@ source $ZSH/oh-my-zsh.sh
 # My aliases
 source $DOTFILES/alias
 
-homeOnly export PATH="$HOME/.brew/bin:$PATH"
-42Only   export PATH="/usr/local/sbin:$PATH"
+42Only   export PATH="$HOME/.brew/bin:$PATH"
+homeOnly export PATH="/usr/local/sbin:$PATH"
 
 # PATH for RVM 
 export PATH="$PATH:$HOME/.rvm/bin"
