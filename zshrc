@@ -30,5 +30,5 @@ export PATH="$PATH:$DOTFILES/script"
 export GOPATH="$HOME/golang"
 export PATH="$PATH:$GOPATH/bin"
 
-42Only export MACHINE_STORAGE_PATH="/goinfre/machine"
-eval $(docker-machine env default)
+42Only export MACHINE_STORAGE_PATH="/sgoinfre/goinfre/Perso/ale-batt/machine/"
+# eval $(docker-machine env default)
