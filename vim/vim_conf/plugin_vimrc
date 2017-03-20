@@ -32,6 +32,8 @@ Plug 'tpope/vim-abolish'
 " Languages
 Plug 'fatih/vim-go'
 "Plug 'mattn/emmet-vim'
+Plug 'c.vim'
+Plug 'a.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -45,9 +47,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
 Plug 'hsitz/vimorganizer'
 Plug 'irrationalistic/vim-tasks'
-
-" Quickly switch between file.c to header.h 
-Plug 'a.vim'
 
 " Make <tab> work better
 Plug 'ervandew/supertab'
