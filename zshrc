@@ -22,6 +22,7 @@ homeOnly export PATH="/usr/local/sbin:$PATH"
 
 # PATH for RVM 
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/.gem/bin"
 
 # PATH for Personal script
 export PATH="$PATH:$DOTFILES/script"
@@ -29,6 +30,10 @@ export PATH="$PATH:$DOTFILES/script"
 # PATH for GO 
 export GOPATH="$HOME/golang"
 export PATH="$PATH:$GOPATH/bin"
+#export GOROOT="$GOPATH"
 
 42Only export MACHINE_STORAGE_PATH="/sgoinfre/goinfre/Perso/ale-batt/machine/"
-# eval $(docker-machine env default)
+eval $(docker-machine env default)
+
+# Load Homebrew config script
+source $HOME/.brewconfig.zsh
