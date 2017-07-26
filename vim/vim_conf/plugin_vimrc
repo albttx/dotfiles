@@ -44,7 +44,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " Vim as notebook
-Plug 'tpope/vim-markdown'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'hsitz/vimorganizer'
 Plug 'irrationalistic/vim-tasks'
 
