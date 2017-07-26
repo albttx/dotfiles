@@ -32,8 +32,8 @@ Plug 'tpope/vim-abolish'
 " Languages
 Plug 'fatih/vim-go'
 "Plug 'mattn/emmet-vim'
-Plug 'c.vim'
 Plug 'a.vim'
+Plug 'keith/swift.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
