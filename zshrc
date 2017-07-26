@@ -11,7 +11,7 @@ ZSH_THEME="agnoster"
 DEFAULT_USER="aera_style"
 
 # Oh-my-zsh plugin list
-plugins=(git ruby sublime zsh-syntax-highlighting alias-tips)
+plugins=(git ruby docker zsh-syntax-highlighting alias-tips)
 source $ZSH/oh-my-zsh.sh
 
 # My aliases
