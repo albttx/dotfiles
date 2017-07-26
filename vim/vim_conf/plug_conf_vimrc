@@ -37,6 +37,7 @@ let g:go_def_reuse_buffer = 1
 " -----------------------------------------------------------
 "  		NERD TREE
 " - ---------------------------------------------------------
+let g:NERDTreeIgnore=['\.o$', '\.swp$']
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
