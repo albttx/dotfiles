@@ -1,6 +1,6 @@
 [user]
 	name = Albert Le Batteux
-	email = albert.lebatteux@icloud.com
+	email = ale-batt@student.42.fr
 [core]
 	editor = vim
 	#whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
