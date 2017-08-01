@@ -19,7 +19,8 @@ set nowrap
 set ft=nasm
 
 " vim .swp file are save in another directory
-set directory=~/.vim/.swp//
+" set directory=~/.vim/.swp//
+set noswapfile
 
 " Ctags works with CtrlP
 map <C-t> :CtrlPTag<CR>

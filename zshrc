@@ -11,7 +11,7 @@ ZSH_THEME="agnoster"
 DEFAULT_USER="aera_style"
 
 # Oh-my-zsh plugin list
-plugins=(git ruby sublime zsh-syntax-highlighting alias-tips)
+plugins=(git ruby sublime zsh-syntax-highlighting alias-tips kubectl)
 source $ZSH/oh-my-zsh.sh
 
 # My aliases
@@ -30,5 +30,11 @@ export PATH="$PATH:$DOTFILES/script"
 export GOPATH="$HOME/golang"
 export PATH="$PATH:$GOPATH/bin"
 
+# PATH for curl (with http2)
+export PATH="/usr/local/opt/curl/bin:$PATH"
+
 42Only export MACHINE_STORAGE_PATH="/goinfre/machine"
 eval $(docker-machine env default)
+
+# IN TEST - for Z
+ . /usr/local/etc/profile.d/z.sh
