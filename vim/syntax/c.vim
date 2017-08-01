@@ -9,3 +9,6 @@ highlight link unitfunct String
 
 syntax keyword lib42define D_ERROR D_LIST D_VECTOR D_STACK D_QUEUE D_ARRAY D_HTABLE D_TIMER D_STRING D_GETOPT D_UNIT D_MATRIX D_RBTREE
 highlight link lib42define define
+
+syntax keyword missedtype u_short u_int u_char
+highlight link missedtype Type
