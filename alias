@@ -1,4 +1,4 @@
-# Add in .zshrc :   source .alias
+# vi:syntax=sh
 
 alias vi="vim"
 alias gwww="gcc -Wall -Wextra -Werror"
@@ -24,12 +24,18 @@ alias dckdel="docker rm -f \$(docker ps -aq)"
 alias dckclr="docker rmi $(docker images -q --filter 'dangling=true')"
 
 dckirssi() {
-	docker run --rm -it --name irssi \
+	docker run --rm -it --name dckirssi \
 		-e TERM \
 		-u $(id -u):$(id -g) \
 		--log-driver=none \
 		-v $HOME/.irssi:/home/user/.irssi:ro \
 		irssi
+}
+
+dckweechat() {
+	docker run --rm -it --name dckweechat \
+		-v $DOTFILES/weechat:/home/guest/.weechat \
+		fstab/weechat-otr
 }
 
 function cdl() {

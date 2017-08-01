@@ -34,6 +34,8 @@ Plug 'fatih/vim-go'
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 "Plug 'mattn/emmet-vim'
 Plug 'lnl7/vim-nix'
+Plug 'a.vim'
+Plug 'keith/swift.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -44,12 +46,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " Vim as notebook
-Plug 'tpope/vim-markdown'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'hsitz/vimorganizer'
 Plug 'irrationalistic/vim-tasks'
-
-" Quickly switch between file.c to header.h 
-Plug 'a.vim'
 
 " Make <tab> work better
 Plug 'ervandew/supertab'

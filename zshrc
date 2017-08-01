@@ -11,7 +11,7 @@ ZSH_THEME="agnoster"
 DEFAULT_USER="aera_style"
 
 # Oh-my-zsh plugin list
-plugins=(git ruby sublime zsh-syntax-highlighting alias-tips kubectl)
+plugins=(git ruby docker zsh-syntax-highlighting alias-tips)
 source $ZSH/oh-my-zsh.sh
 
 # My aliases
@@ -22,6 +22,7 @@ homeOnly export PATH="/usr/local/sbin:$PATH"
 
 # PATH for RVM 
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/.gem/bin"
 
 # PATH for Personal script
 export PATH="$PATH:$DOTFILES/script"
@@ -29,12 +30,16 @@ export PATH="$PATH:$DOTFILES/script"
 # PATH for GO 
 export GOPATH="$HOME/golang"
 export PATH="$PATH:$GOPATH/bin"
+#export GOROOT="$GOPATH"
 
 # PATH for curl (with http2)
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
 42Only export MACHINE_STORAGE_PATH="/goinfre/machine"
+42Only export MACHINE_STORAGE_PATH="/sgoinfre/goinfre/Perso/ale-batt/machine/"
+
+# Set the docker environment variable needed
 eval $(docker-machine env default)
 
-# IN TEST - for Z
- . /usr/local/etc/profile.d/z.sh
+# Load Homebrew config script
+source $HOME/.brewconfig.zsh
