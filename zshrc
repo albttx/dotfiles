@@ -42,4 +42,4 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 eval $(docker-machine env default)
 
 # Load Homebrew config script
-source $HOME/.brewconfig.zsh
+42Only source $HOME/.brewconfig.zsh
