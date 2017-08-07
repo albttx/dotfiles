@@ -19,6 +19,8 @@ brew:
 		echo "Updating && upgrading brew..."
 		brew update && brew upgrade
 	fi
+	# needed for tmux
+	brew install reattach-to-user-namespace
 	brew install docker docker-machine docker-compose
 	brew install tig tmux tree htop sl tty_clock colordiff vim
 	brew install cask
