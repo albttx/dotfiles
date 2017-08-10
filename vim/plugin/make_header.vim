@@ -18,22 +18,18 @@
 " along with this program.  If not, see <http://www.gnu.org/licenses/>.
 "
 
+let header42update = 0
+
 " 			.c files autocmd
 autocmd	BufNewFile	*.c			call	Insert_header_42()
-autocmd	BufWritePre	*.c			call	Update_header_42()
-
-
-" 			.h files autocmd
 autocmd	BufNewFile	*.h			call	Insert_header_42()
-autocmd	BufWritePre	*.h			call	Update_header_42()
-
-" 			Makefile autocmd
 autocmd	BufNewFile	Makefile	call	Insert_header_42_Makefile()
-autocmd	BufWritePre	Makefile	call	Update_header_42_Makefile()
 
-"
-"		.c and .h Part :
-"
+if header42update == 1
+	autocmd	BufWritePre	*.c			call	Update_header_42()
+	autocmd	BufWritePre	*.h			call	Update_header_42()
+	autocmd	BufWritePre	Makefile	call	Update_header_42_Makefile()
+endif
 
 function!	Insert_header_42_add_info(begin, end, nul_line, setline)
 	let l:line = "/*   " . a:begin . ": " . strftime("%Y/%m/%d %H:%M:%S") . " by " . s:author
