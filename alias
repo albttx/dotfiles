@@ -53,8 +53,14 @@ d2h() {
 	echo "obase=16; $@" | bc
 }
 
-42Only () {
-	if [ -d /goinfre ]; then
+42Only() {
+	if [ -d "$(hostname | grep -E 'e\d*r\d*p\d*$')" ]; then
+		$@
+	fi
+}
+
+VPOnly() {
+	if [ -n "$(hostname | grep 'vp.42.fr')" ]; then
 		$@
 	fi
 }

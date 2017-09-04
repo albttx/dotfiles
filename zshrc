@@ -35,7 +35,7 @@ export PATH="$PATH:$GOPATH/bin"
 # PATH for curl (with http2)
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
-42Only export MACHINE_STORAGE_PATH="/goinfre/machine"
+VPOnly export MACHINE_STORAGE_PATH="/goinfre/machine"
 42Only export MACHINE_STORAGE_PATH="/sgoinfre/goinfre/Perso/ale-batt/machine/"
 
 # Set the docker environment variable needed
