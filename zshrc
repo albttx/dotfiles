@@ -6,6 +6,9 @@ export USER42=ale-batt
 export AGNOSTER_USER=ale-batt
 
 export DOTFILES="$HOME/dotfiles"
+export LANG=en
+
+export GPG_TTY=$(tty)
 
 ZSH_THEME="agnoster"
 DEFAULT_USER="aera_style"
