@@ -1,0 +1,50 @@
+# Me
+set from = "albert.lebatteux@gmail.com"
+set realname = "Albert Le Batteux"
+
+# My credentials
+set smtp_url = "smtps://albert.lebatteux@smtp.gmail.com:465/"
+set imap_user = "albert.lebatteux@gmail.com"
+set smtp_authenticators = 'gssapi:login'
+
+# My mailboxes
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed = "+[Gmail]/Drafts"
+set trash = "imaps://imap.gmail.com/[Gmail]/Trash"
+
+# Where to put the stuff
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
+
+# Etc
+set mail_check = 30
+set move = no
+set imap_keepalive = 900
+set sort = threads
+set editor = "vim"
+set use_envelope_from = yes
+
+set pgp_use_gpg_agent = yes
+set pgp_sign_as = 6ECDB1C9555BCE18
+set pgp_timeout = 3600
+set crypt_autosign = yes
+set crypt_replyencrypt = yes
+
+# set ssl
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+set edit_hdrs
+auto_view text/html
+
+# GnuPG bootstrap
+# source ~/.mutt/gpg.rc
+
+# handle accent
+#set locale="iso-8859-15"
+
+# Includes
+source ~/.mutt/colorscheme
+source ~/.mutt/gpg.conf
