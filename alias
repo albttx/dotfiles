@@ -21,7 +21,7 @@ alias dck="docker"
 alias dckc="docker-compose"
 alias dckm="docker-machine"
 alias dckdel="docker rm -f \$(docker ps -aq)"
-alias dckclr="docker rmi $(docker images -q --filter 'dangling=true')"
+alias dckclr="docker rmi -f \$(docker images -q --filter 'dangling=true')"
 
 dckirssi() {
 	docker run --rm -it --name dckirssi \
