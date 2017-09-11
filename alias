@@ -7,6 +7,7 @@ alias myalias="cat ~/.alias"
 alias py="python"
 alias rb="ruby"
 alias lls="ls"
+alias sl="ls"
 alias check="grep -rni --exclude-dir='node_modules' . -e "
 
 alias zen="curl https://api.github.com/zen"
@@ -21,7 +22,7 @@ alias dck="docker"
 alias dckc="docker-compose"
 alias dckm="docker-machine"
 alias dckdel="docker rm -f \$(docker ps -aq)"
-alias dckclr="docker rmi $(docker images -q --filter 'dangling=true')"
+alias dckclr="docker rmi -f \$(docker images -q --filter 'dangling=true')"
 
 dckirssi() {
 	docker run --rm -it --name dckirssi \

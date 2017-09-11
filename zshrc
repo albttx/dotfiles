@@ -21,6 +21,7 @@ source $ZSH/oh-my-zsh.sh
 source $DOTFILES/alias
 
 42Only   export PATH="$HOME/.brew/bin:$PATH"
+VPOnly   export PATH="$HOME/.brew/bin:$PATH"
 homeOnly export PATH="/usr/local/sbin:$PATH"
 
 # PATH for RVM 
