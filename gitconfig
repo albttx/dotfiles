@@ -1,12 +1,13 @@
 [user]
 	name = Albert Le Batteux
-	email = ale-batt@student.42.fr
+	email = albert.lebatteux@gmail.com
+	signingkey = 6ECDB1C9555BCE18
 [core]
 	editor = vim
 	#whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = ~/.gitignore
 [web]
-	browser = google-chrome
+	browser = opera
 [color]
 	ui = auto
 [color "branch"]
@@ -29,5 +30,10 @@
 	user = ale-batt
 	token = token
 [alias]
+    vp = "config user.email 'alebatteux@vente-privee.com'"
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg

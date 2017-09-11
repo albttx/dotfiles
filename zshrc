@@ -6,6 +6,9 @@ export USER42=ale-batt
 export AGNOSTER_USER=ale-batt
 
 export DOTFILES="$HOME/dotfiles"
+export LANG=en
+
+export GPG_TTY=$(tty)
 
 ZSH_THEME="agnoster"
 DEFAULT_USER="aera_style"
@@ -18,6 +21,7 @@ source $ZSH/oh-my-zsh.sh
 source $DOTFILES/alias
 
 42Only   export PATH="$HOME/.brew/bin:$PATH"
+VPOnly   export PATH="$HOME/.brew/bin:$PATH"
 homeOnly export PATH="/usr/local/sbin:$PATH"
 
 # PATH for RVM 

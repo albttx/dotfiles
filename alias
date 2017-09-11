@@ -7,6 +7,7 @@ alias myalias="cat ~/.alias"
 alias py="python"
 alias rb="ruby"
 alias lls="ls"
+alias sl="ls"
 alias check="grep -rni --exclude-dir='node_modules' . -e "
 
 alias zen="curl https://api.github.com/zen"
