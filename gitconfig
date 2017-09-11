@@ -30,7 +30,8 @@
 	user = ale-batt
 	token = token
 [alias]
-    vp = "config user.email 'alebatteux@vente-privee.com'"
+    github = "config --global user.email 'albert.lebatteux@gmail.com'"
+    vp = "config --global user.email 'alebatteux@vente-privee.com'"
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [commit]
