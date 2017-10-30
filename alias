@@ -39,6 +39,12 @@ dckweechat() {
 		fstab/weechat-otr
 }
 
+loop() {
+	nb=$1
+	shift
+	for ((i = 0; i < $nb; i++)); do $@; done
+}
+
 function cdl() {
 	cd $1
 	ls $2
