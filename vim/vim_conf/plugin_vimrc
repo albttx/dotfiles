@@ -36,6 +36,7 @@ Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' 
 Plug 'lnl7/vim-nix'
 Plug 'a.vim'
 Plug 'keith/swift.vim'
+Plug 'rust-lang/rust.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
