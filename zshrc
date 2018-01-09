@@ -33,6 +33,7 @@ export PATH="$PATH:$DOTFILES/script"
 
 # PATH for GO 
 export GOPATH="$HOME/golang"
+export GOPROFILE="$GOPATH/src/github.com/ale-batt"
 export PATH="$PATH:$GOPATH/bin"
 #export GOROOT="$GOPATH"
 
