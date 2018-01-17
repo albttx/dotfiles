@@ -43,6 +43,20 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 VPOnly export MACHINE_STORAGE_PATH="/goinfre/machine"
 42Only export MACHINE_STORAGE_PATH="/sgoinfre/goinfre/Perso/ale-batt/machine/"
 
+# Setting fd as the default source for fzf
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude node_modules --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_OPTS="--preview 'chroma {}'"
+export FZF_TMUX=1
+
+run-fzf-widget() fzf
+zle -N run-fzf-widget
+
+bindkey -e
+bindkey '^f' run-fzf-widget
+
+alias tfzf='fzf-tmux'
+
 # Set the docker environment variable needed
 eval $(docker-machine env default)
 

@@ -22,7 +22,7 @@ brew:
 	# needed for tmux
 	brew install reattach-to-user-namespace
 	brew install docker docker-machine docker-compose
-	brew install tig tmux tree htop sl tty_clock colordiff vim
+	brew install tig tmux tree htop sl tty_clock colordiff vim fzf
 	brew install cask
 	brew tap homebrew/services
 
