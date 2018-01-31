@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "/usr/local/bin/python",
+    "python.linting.pep8Enabled": true,
+    "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
+    "window.zoomLevel": 0,
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "element-helper.version": "2.0",
+    "editor.scrollBeyondLastLine": false,
+    "workbench.colorTheme": "Panda Syntax",
+    "go.lintTool": "gometalinter",
+    "go.lintFlags": [
+        "--exclude=\"\bexported \\w+ (\\S*['.]*)([a-zA-Z'.*]*) should have comment or be unexported\b\""
+    ],
+    "zenMode.hideTabs": false,
+}
