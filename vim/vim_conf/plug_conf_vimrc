@@ -30,6 +30,8 @@ let g:EasyGrepBinary=1
 " -----------------------------------------------------------
 "  		VIM-GO
 " - ---------------------------------------------------------
+" let g:polyglot_disabled = ['go']
+
 let g:go_fmt_command = "goimports"
 let g:go_def_mapping_enabled = 0
 let g:go_def_reuse_buffer = 1

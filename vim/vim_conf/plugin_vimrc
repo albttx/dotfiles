@@ -30,13 +30,15 @@ Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-abolish'
 
 " Languages
+Plug 'sheerun/vim-polyglot'
+
 Plug 'fatih/vim-go'
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 "Plug 'mattn/emmet-vim'
 Plug 'lnl7/vim-nix'
-Plug 'a.vim'
 Plug 'keith/swift.vim'
 Plug 'rust-lang/rust.vim'
+Plug 'chr4/nginx.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'

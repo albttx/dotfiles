@@ -42,10 +42,10 @@ nnoremap <silent> <ESC>^[OB <Nop>
 nnoremap <silent> <ESC>^[OD <Nop>
 nnoremap <silent> <ESC>^[OC <Nop>
 
-nnoremap <silent> <C-Right> <c-w>l
-nnoremap <silent> <C-Left> <c-w>h
-nnoremap <silent> <C-Up> <c-w>k
-nnoremap <silent> <C-Down> <c-w>j
+nnoremap <silent> <S-Right> <c-w>l
+nnoremap <silent> <S-Left> <c-w>h
+nnoremap <silent> <S-Up> <c-w>k
+nnoremap <silent> <S-Down> <c-w>j
 
 " Force some mistakes i always do :Wq :Q ...
 command W w
