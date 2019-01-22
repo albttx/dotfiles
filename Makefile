@@ -37,4 +37,5 @@ link:
 	ln -fs $(CONFIGDIR)/tmux/tmux.conf	$(HOME)/.tmux.conf
 	ln -Fs $(CONFIGDIR)/irssi			$(HOME)/.irssi
 	ln -Fs $(CONFIGDIR)/weechat			$(HOME)/.weechat
+	ln -Fs $(CONFIGDIR)/profile			$(HOME)/.profile
 
