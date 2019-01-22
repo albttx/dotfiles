@@ -8,7 +8,7 @@ alias py="python"
 alias rb="ruby"
 alias lls="ls"
 alias sl="ls"
-alias check="grep -rni --exclude-dir='node_modules' . -e "
+alias check="grep -rni --exclude-dir='node_modules' --exclude-dir='vendor' . -e "
 
 alias zen="curl https://api.github.com/zen"
 alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -86,5 +86,5 @@ function gitall() {
 	else
 		git commit -m update
 	fi
-	git push
+	git push origin HEAD
 }
