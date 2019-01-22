@@ -13,23 +13,23 @@ ohmyzsh:
 
 # If OSX install brew and some nice soft
 brew:
-	if [ -x brew ] ; then
-		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	else
-		echo "Updating && upgrading brew..."
-		brew update && brew upgrade
-	fi
+	# if [ -x brew ] ; then
+	# 	/usr/bin/ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	# else
+	# 	echo "Updating && upgrading brew..."
+	# 	brew update && brew upgrade
+	# fi
 	# needed for tmux
 	brew install reattach-to-user-namespace
 	brew install docker docker-machine docker-compose
-	brew install tig tmux tree htop sl tty_clock colordiff vim fzf
+	brew install tig tmux tree htop sl colordiff vim fzf
 	brew install cask
+	brew install gnupg gpg-agent pinentry-mac
 	brew tap homebrew/services
 
 link:
 	ln -Fs $(CONFIGDIR)/vim				$(HOME)/.vim
 	ln -fs $(CONFIGDIR)/vim/vimrc		$(HOME)/.vimrc
-	ln -fs $(CONFIGDIR)/neovim			$(HOME)/.config/nvim
 	ln -fs $(CONFIGDIR)/zshrc			$(HOME)/.zshrc
 	ln -fs $(CONFIGDIR)/bashrc			$(HOME)/.bashrc
 	ln -fs $(CONFIGDIR)/alias			$(HOME)/.alias
