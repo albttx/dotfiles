@@ -1,16 +1,19 @@
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
+export PATH="/usr/local/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export AGNOSTER_USER=albttx
 export ZSH=$HOME/.oh-my-zsh
 
 # PATH for GO 
-export GOPATH="$HOME/golang"
-export GOPROFILE="$GOPATH/src/github.com/albttx"
+export GOPATH="$HOME/go"
+export GOROOT=/usr/local/opt/go/libexec
+export GOHOME="$GOPATH/src/github.com/albttx"
 export PATH="$PATH:$GOPATH/bin"
 export GO111MODULE=on
+export GOPROXY=https://goproxy.io
 
 # Setting fd as the default source for fzf
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude node_modules --exclude .git'
@@ -36,3 +39,7 @@ export PATH="$PATH:$DOTFILES/script"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
 
+
+#### SCALEWAY
+export LDAP_USERNAME="alebatteux"
+export LDAP_PASSWORD="RbvbYtHN41@-"

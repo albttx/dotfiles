@@ -1,8 +1,23 @@
+# -*- mode: sh -*-
+
 ZSH_THEME="agnoster"
-DEFAULT_USER="aera_style"
+# DEFAULT_USER="albttx"
+
+export FZF_TMUX=0
+export FZF_BASE="$(whereis fzf)"
+export FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
 
 # Oh-my-zsh plugin list
-plugins=(git docker zsh-syntax-highlighting alias-tips)
+plugins=(
+	git
+	aws
+	docker
+	vagrant
+	fzf
+	zsh-syntax-highlighting
+	zsh-autosuggestions
+	alias-tips
+)
 source $ZSH/oh-my-zsh.sh
 
 # My aliases
@@ -16,19 +31,20 @@ zle -N run-fzf-widget
 bindkey -e
 bindkey '^f' run-fzf-widget
 
-alias tfzf='fzf-tmux'
+# alias tfzf='fzf-tmux'
 
 # Set the docker environment variable needed
 #eval $(docker-machine env default)
 
 eval "$(direnv hook zsh)"
 
-# Load Homebrew config script
-42Only source $HOME/.brewconfig.zsh
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/nomad nomad
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
