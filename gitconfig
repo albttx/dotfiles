@@ -31,12 +31,10 @@
 	user = albttx
 	token = token
 [alias]
-    github = "config --global user.email 'albert.lebatteux@gmail.com'"
-    scaleway = "config --global user.email 'alebatteux@online.net'"
+	github = "config --global user.email 'albert.lebatteux@gmail.com'"
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	delete-merged-branches = "!git checkout master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
-	push-branch = "!git push -u origin $(git branch-name)"
 
 [commit]
 	gpgsign = true
@@ -44,5 +42,3 @@
 	program = gpg
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-[url "git@gitlab.infra.online.net:"]
-	insteadOf = https://gitlab.infra.online.net

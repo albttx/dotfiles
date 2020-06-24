@@ -1,4 +1,3 @@
-export GOPATH=$HOME/golang
 
 if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
     source ~/.gnupg/.gpg-agent-info

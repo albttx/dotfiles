@@ -1,0 +1,28 @@
+# -*- mode: sh -*-
+
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8"
+export EDITOR="vim"
+
+export GPG_TTY=$(tty)
+
+export PATH="${PATH}:${DOTFILES_DIR}/scripts"
+
+# Golang
+##############################################
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export GHOME=$GOPATH/src/github.com/albttx
+
+# FZF
+##############################################
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude node_modules --exclude .git'
+
+# https://github.com/urbainvaes/fzf-marks
+# ctrl-g, to see the list of matches
+# ctrl-y, to jump to a match;
+# ctrl-t, to toggle a match for deletion;
+# ctrl-d, to delete selected matches.
+source $GOPATH/src/github.com/urbainvaes/fzf-marks/fzf-marks.plugin.zsh
