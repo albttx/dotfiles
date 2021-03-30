@@ -518,6 +518,17 @@ keys.clientkeys = gears.table.join(
         move_client(c, "right")
     end),
 
+    -- toggle panel
+    awful.key({ modkey }, "b",
+        function (c)
+             for s in screen do
+                s.left_panel.visible = not s.left_panel.visible 
+                s.top_panel.visible = not s.top_panel.visible 
+            end
+        end,
+        {description = "toggle fullscreen", group = "client"}
+    ),
+
     -- toggle fullscreen
     awful.key({ modkey }, "f",
         function (c)

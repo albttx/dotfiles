@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/albttx/go/src/gitlab.com/kahlercommunications/pcm/hasura/seeds'
+let g:netrw_dirhist_2='/home/albttx/go/src/gitlab.com/kahlercommunications/pcm/hasura'
+let g:netrw_dirhist_1='/home/albttx/go/src/gitlab.com/kahlercommunications/pcm/hasura/migrations'
+let g:netrw_dirhist_0='/home/albttx/go/src/gitlab.com/kahlercommunications/pcm/hasura/migrations/1611850367164_documents'
+let g:netrw_dirhist_9='/home/albttx/go/src/gitlab.com/albttx/docker-formation/ansible/workshops/01'
+let g:netrw_dirhist_8='/home/albttx/go/src/gitlab.com/albttx/docker-formation/ansible/workshops/01/roles'
+let g:netrw_dirhist_7='/home/albttx/go/src/gitlab.com/albttx/docker-formation/ansible/workshops/01/roles/resume'
+let g:netrw_dirhist_6='/home/albttx/go/src/github.com/albttx/qr-menu/docker'
+let g:netrw_dirhist_5='/home/albttx/.aws'
+let g:netrw_dirhist_4='/home/albttx/go/src/gitlab.com/kahlercommunications/pcm'

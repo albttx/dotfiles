@@ -122,3 +122,5 @@ source ${DOTFILES_DIR}/alias
 source ${DOTFILES_DIR}/env
 # source ~/.alias
 # source ~/.env
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
